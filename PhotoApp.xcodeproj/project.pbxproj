@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		13A916522AE7632700211313 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A916512AE7632700211313 /* AppDelegate.swift */; };
 		13A916542AE7632700211313 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A916532AE7632700211313 /* SceneDelegate.swift */; };
-		13A916562AE7632700211313 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A916552AE7632700211313 /* ViewController.swift */; };
-		13A916592AE7632700211313 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13A916572AE7632700211313 /* Main.storyboard */; };
 		13A9165B2AE7632900211313 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13A9165A2AE7632900211313 /* Assets.xcassets */; };
 		13A9165E2AE7632900211313 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13A9165C2AE7632900211313 /* LaunchScreen.storyboard */; };
+		13A916662AE7641600211313 /* EnterEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A916652AE7641500211313 /* EnterEmailViewController.swift */; };
+		13EDE55D2AE9989700B82A4C /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 13EDE55C2AE9989700B82A4C /* SnapKit */; };
+		13EDE55F2AE9989700B82A4C /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 13EDE55E2AE9989700B82A4C /* SnapKit-Dynamic */; };
+		13F4B6142AEAB70200265287 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F4B6132AEAB70200265287 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		13A9164E2AE7632700211313 /* PhotoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13A916512AE7632700211313 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		13A916532AE7632700211313 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		13A916552AE7632700211313 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		13A916582AE7632700211313 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		13A9165A2AE7632900211313 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		13A9165D2AE7632900211313 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		13A9165F2AE7632900211313 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13A916652AE7641500211313 /* EnterEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterEmailViewController.swift; sourceTree = "<group>"; };
+		13F4B6132AEAB70200265287 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +33,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13EDE55D2AE9989700B82A4C /* SnapKit in Frameworks */,
+				13EDE55F2AE9989700B82A4C /* SnapKit-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,8 +62,8 @@
 			children = (
 				13A916512AE7632700211313 /* AppDelegate.swift */,
 				13A916532AE7632700211313 /* SceneDelegate.swift */,
-				13A916552AE7632700211313 /* ViewController.swift */,
-				13A916572AE7632700211313 /* Main.storyboard */,
+				13A916652AE7641500211313 /* EnterEmailViewController.swift */,
+				13F4B6132AEAB70200265287 /* MainViewController.swift */,
 				13A9165A2AE7632900211313 /* Assets.xcassets */,
 				13A9165C2AE7632900211313 /* LaunchScreen.storyboard */,
 				13A9165F2AE7632900211313 /* Info.plist */,
@@ -83,6 +87,10 @@
 			dependencies = (
 			);
 			name = PhotoApp;
+			packageProductDependencies = (
+				13EDE55C2AE9989700B82A4C /* SnapKit */,
+				13EDE55E2AE9989700B82A4C /* SnapKit-Dynamic */,
+			);
 			productName = PhotoApp;
 			productReference = 13A9164E2AE7632700211313 /* PhotoApp.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = 13A916452AE7632700211313;
+			packageReferences = (
+				13EDE55B2AE9989700B82A4C /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 13A9164F2AE7632700211313 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +138,6 @@
 			files = (
 				13A9165E2AE7632900211313 /* LaunchScreen.storyboard in Resources */,
 				13A9165B2AE7632900211313 /* Assets.xcassets in Resources */,
-				13A916592AE7632700211313 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +148,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13A916562AE7632700211313 /* ViewController.swift in Sources */,
+				13A916662AE7641600211313 /* EnterEmailViewController.swift in Sources */,
 				13A916522AE7632700211313 /* AppDelegate.swift in Sources */,
 				13A916542AE7632700211313 /* SceneDelegate.swift in Sources */,
+				13F4B6142AEAB70200265287 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		13A916572AE7632700211313 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				13A916582AE7632700211313 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		13A9165C2AE7632900211313 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -297,9 +300,9 @@
 				INFOPLIST_FILE = PhotoApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,9 +310,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = youngjae96.PhotoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -325,9 +331,9 @@
 				INFOPLIST_FILE = PhotoApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -335,9 +341,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = youngjae96.PhotoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -363,6 +372,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		13EDE55B2AE9989700B82A4C /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		13EDE55C2AE9989700B82A4C /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 13EDE55B2AE9989700B82A4C /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		13EDE55E2AE9989700B82A4C /* SnapKit-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 13EDE55B2AE9989700B82A4C /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = "SnapKit-Dynamic";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 13A916462AE7632700211313 /* Project object */;
 }

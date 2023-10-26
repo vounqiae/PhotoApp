@@ -13,10 +13,16 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
-        // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
-        // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
-        guard let _ = (scene as? UIWindowScene) else { return }
+        // 먼저 매개변수 scene을 통해 하나 이상의 Window를 관리할 수 있는 windowScene을 생성함
+        guard let windowScene = (scene as? UIWindowScene) else { return }
+        // 미리 선언되어있던 window 프로퍼티에 휴대폰의 크기를 가져와 window를 생성해 할당해줌
+        window = UIWindow(frame: windowScene.coordinateSpace.bounds)
+        // window의 루트뷰에 실제로 앱 실행 시에 보여질 ViewController를 NavigationController의 루트뷰로 넣어줌
+        window?.rootViewController = EnterEmailViewController()
+        // 이 window가 실제로 보이도록 설정해줌
+        window?.makeKeyAndVisible()
+        // 만든 윈도우씬을 실제 윈도우 씬에 넣어줌
+        window?.windowScene = windowScene
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
